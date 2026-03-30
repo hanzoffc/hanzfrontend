@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="monetag" content="44bf9630f31f3d846da1919aad5ec89c">
+    <title>Hanif | Junior Frontend Developer & Bot Specialist Batam</title>
+    <meta name="description" content="Portofolio Hanif, Junior Frontend Developer di Batam. Ahli dalam Slicing UI Tailwind CSS dan Logic Scripting Bot WhatsApp/Discord.">
+    <meta name="keywords" content="Frontend Developer Batam, Web Developer Batam, Hanif Dev, Slicing UI, Pembuatan Bot WhatsApp, Junior Developer Indonesia">
+    <meta name="author" content="Hanif">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hanif",
+      "jobTitle": "Junior Frontend Developer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Batam",
+        "addressCountry": "ID"
+      },
+      "description": "Junior Frontend Developer spesialis UI Slicing dan Bot Automasi."
+    }
+    </script>
+
+    <meta property="og:title" content="Hanif | Junior Frontend Developer">
+    <meta property="og:description" content="Slicing UI Modern & Bot Automation. Berbasis di Batam.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:url" content="https://hanzfrontend.kesug.com">
+
+    <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/div-coding-icon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root { --bg: #020617; --accent: #00d2ff; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg); color: #94a3b8; }
+        .code-font { font-family: 'Fira Code', monospace; }
+        
+        /* Glassmorphism Premium */
+        .glass {
+            background: rgba(15, 23, 42, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass:hover {
+            border-color: var(--accent);
+            background: rgba(15, 23, 42, 0.7);
+            box-shadow: 0 0 40px rgba(0, 210, 255, 0.15);
+        }
+
+        /* Mouse Spotlight Effect */
+        .cursor-glow {
+            position: fixed;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(0, 210, 255, 0.07) 0%, transparent 20%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Nav Link Animation */
+        .nav-link.active { color: var(--accent); font-weight: 800; }
+
+        /* Smooth Image Zoom */
+        .img-zoom { overflow: hidden; }
+        .img-zoom img { transition: transform 0.8s ease; }
+        .img-zoom:hover img { transform: scale(1.1); }
+    </style>
+</head>
+<body class="overflow-x-hidden selection:bg-cyan-500/20 selection:text-cyan-200">
+    <div class="cursor-glow" id="glow"></div>
+
+    <nav class="fixed w-full z-50 py-6 px-6" id="navbar">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass rounded-full px-8 py-4 shadow-2xl">
+            <a href="#" class="text-2xl font-black text-white tracking-tighter uppercase code-font">&lt;HNF/&gt;</a>
+            <div class="hidden md:flex space-x-10 text-[10px] font-bold tracking-[0.2em] uppercase">
+                <a href="#home" class="nav-link active hover:text-white transition">Home</a>
+                <a href="#about" class="nav-link hover:text-white transition">About</a>
+                <a href="#projects" class="nav-link hover:text-white transition">Projects</a>
+                <a href="#contact" class="nav-link hover:text-white transition">Contact</a>
+            </div>
+            <a href="mailto:hanif@example.com" class="hidden md:block bg-white text-black px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-cyan-400 transition transform hover:scale-105 active:scale-95">Hire Me</a>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex flex-col items-center justify-center px-6 pt-20 relative z-10 text-center">
+        <div class="mb-10 relative" data-aos="zoom-in">
+            <div class="w-32 h-32 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/008/442/086/small_2x/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" alt="Hanif Profile" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute -bottom-2 -right-2 bg-cyan-500 p-3 rounded-2xl shadow-lg border-4 border-slate-900">
+                <i data-lucide="check-check" class="w-5 h-5 text-black"></i>
+            </div>
+        </div>
+        
+        <h1 class="text-6xl md:text-[8rem] font-black text-white leading-none tracking-tighter mb-6" data-aos="fade-up">
+            HANIF<span class="text-cyan-400">.</span>
+        </h1>
+        <p class="text-lg md:text-2xl max-w-2xl mx-auto mb-12 font-light leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+            Junior <span class="text-white font-bold underline decoration-cyan-400/30">Frontend Developer</span> berbasis di Batam. Slicing UI dengan presisi & otomasi <span class="text-cyan-400 font-semibold">Bot Scripting</span>.
+        </p>
+        
+        <div class="flex flex-col md:flex-row gap-6" data-aos="fade-up" data-aos-delay="200">
+            <a href="#projects" class="bg-cyan-500 text-black px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white transition-all shadow-xl shadow-cyan-500/10">Lihat Portofolio</a>
+            <div class="flex items-center gap-4 px-6 py-4 glass rounded-2xl">
+                <span class="flex h-3 w-3 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                </span>
+                <span class="text-[10px] font-black uppercase tracking-widest text-white">Tersedia untuk Proyek</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 px-6 relative z-10 bg-slate-950/40">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="img-zoom rounded-[3rem] shadow-2xl border border-slate-800" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800" alt="Working Environment" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000">
+            </div>
+            <div data-aos="fade-left">
+                <h2 class="text-4xl font-black text-white mb-8 tracking-tighter uppercase italic italic">/ Profil & Visi</h2>
+                <p class="text-lg leading-relaxed mb-6">
+                    Satu tahun terakhir, saya mendedikasikan waktu saya untuk mempelajari ekosistem <span class="text-white">Frontend</span>. Berawal dari Batam, saya membangun solusi web yang mengutamakan kecepatan dan estetika.
+                </p>
+                <p class="text-lg leading-relaxed mb-10">
+                    Keahlian saya mencakup slicing <span class="text-cyan-400 font-bold">Tailwind CSS</span> yang responsif dan pengembangan script otomasi menggunakan <span class="text-white font-bold">Node.js</span> untuk Bot WhatsApp/Discord.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-10 border-t border-slate-800">
+                    <div>
+                        <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Domisili</p>
+                        <p class="text-white font-bold">Batam, Indonesia</p>
+                    </div>
+                    <div>
+                        <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Pengalaman</p>
+                        <p class="text-white font-bold">1 Tahun-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-32 px-6 relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-20 text-center" data-aos="fade-up">
+                <h2 class="text-5xl font-black text-white mb-4 uppercase tracking-tighter italic">Proyek Pilihan</h2>
+                <p class="text-slate-500 uppercase tracking-[0.4em] text-[10px] font-bold">Hasil Karya Tahun 2025-2026</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="glass p-4 rounded-[2.5rem] flex flex-col h-full group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-60 rounded-[2rem] overflow-hidden mb-8 relative">
+                        <img src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&q=80&w=600" alt="WA Bot" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-cyan-900/40 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="px-4 pb-6">
+                        <h3 class="text-xl font-extrabold text-white mb-3 uppercase flex justify-between items-center transition group-hover:text-cyan-400">
+                            WhatsApp Bot
+                            <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                        </h3>
+                        <p class="text-sm leading-relaxed mb-8 text-slate-400">Otomasi pesan pintar menggunakan Node.js untuk kebutuhan manajemen admin dan broadcast otomatis.</p>
+                        <div class="flex gap-4 text-[9px] font-black tracking-widest text-cyan-500 uppercase border-t border-slate-800/50 pt-5">
+                            <span>Scripting</span><span>Node.js</span><span>API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass p-4 rounded-[2.5rem] flex flex-col h-full group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-60 rounded-[2rem] overflow-hidden mb-8 relative text-center">
+                        <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&q=80&w=600" alt="Chess Logic" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-blue-900/40 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="px-4 pb-6">
+                        <h3 class="text-xl font-extrabold text-white mb-3 uppercase flex justify-between items-center transition group-hover:text-indigo-400">
+                            Chess Logic JS
+                            <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                        </h3>
+                        <p class="text-sm leading-relaxed mb-8 text-slate-400">Pengembangan mesin catur 2D interaktif dengan validasi langkah menggunakan algoritma JavaScript murni.</p>
+                        <div class="flex gap-4 text-[9px] font-black tracking-widest text-indigo-400 uppercase border-t border-slate-800/50 pt-5">
+                            <span>Canvas</span><span>Vanilla JS</span><span>Game</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass p-4 rounded-[2.5rem] flex flex-col h-full group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-60 rounded-[2rem] overflow-hidden mb-8 relative">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=600" alt="E-Commerce" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-pink-900/40 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="px-4 pb-6">
+                        <h3 class="text-xl font-extrabold text-white mb-3 uppercase flex justify-between items-center transition group-hover:text-pink-400">
+                            E-Commerce UI
+                            <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                        </h3>
+                        <p class="text-sm leading-relaxed mb-8 text-slate-400">Slicing antarmuka toko online dengan Tailwind CSS, fokus pada responsivitas dan konversi pengguna.</p>
+                        <div class="flex gap-4 text-[9px] font-black tracking-widest text-pink-400 uppercase border-t border-slate-800/50 pt-5">
+                            <span>Tailwind</span><span>UI/UX</span><span>Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-40 px-6 relative z-10 overflow-hidden">
+        <div class="max-w-4xl mx-auto glass p-12 md:p-24 rounded-[4rem] text-center relative border-cyan-500/10 shadow-2xl" data-aos="zoom-in">
+            <div class="absolute top-0 right-0 p-10 opacity-5">
+                <i data-lucide="send" class="w-40 h-40"></i>
+            </div>
+            <h2 class="text-5xl md:text-7xl font-black text-white mb-10 tracking-tighter italic uppercase leading-none">Ayo Berdiskusi</h2>
+            <p class="text-xl mb-14 text-slate-400 max-w-lg mx-auto leading-relaxed">
+                Butuh bantuan slicing UI atau otomasi bot? Saya siap diajak bekerja sama.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-10 pt-16 border-t border-slate-800/50 w-full">
+                <a href="mailto:hanifbatam2023@gmail.com" class="bg-red-500 text-black px-12 py-6 rounded-3xl font-black uppercase text-[10px] tracking-[0.3em] hover:scale-105 transition-all shadow-2xl shadow-cyan-500/30">
+                    Mail
+                </a>
+                <div class="flex items-center gap-8">
+                    <a href="https://github.com/hanzoffc" class="bg-green-500 text-black px-12 py-6 rounded-3xl font-black uppercase text-[10px] tracking-[0.3em] hover:scale-105 transition-all shadow-2xl shadow-cyan-500/30">Github<i data-lucide="github"></i></a>
+                    <a href="https://www.tiktok.com/@d.hanif.m" class="bg-blue-500 text-black px-12 py-6 rounded-3xl font-black uppercase text-[10px] tracking-[0.3em] hover:scale-105 transition-all shadow-2xl shadow-cyan-500/30">Tiktok<i data-lucide="tiktok"></i></a>
+                    <a href="https://www.linkedin.com/in/hanif-hanif-5a36713b9/" class="bg-yellow-500 text-black px-12 py-6 rounded-3xl font-black uppercase text-[10px] tracking-[0.3em] hover:scale-105 transition-all shadow-2xl shadow-cyan-500/30">Linkedin<i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center border-t border-slate-900/50">
+        <p class="text-[10px] font-black tracking-[0.8em] text-slate-700 uppercase">
+             Crafted by <span class="text-white">Hanif</span> &copy; 2026 &bull; Batam City
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init({ duration: 1000, once: true });
+
+        // Spotlight Cursor Effect
+        const glow = document.getElementById('glow');
+        window.addEventListener('mousemove', e => {
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+        });
+
+        // Navbar Shadow on Scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('pt-2');
+                nav.querySelector('> div').classList.add('bg-slate-950/80', 'py-3');
+                nav.querySelector('> div').classList.remove('py-4');
+            } else {
+                nav.classList.remove('pt-2');
+                nav.querySelector('> div').classList.remove('bg-slate-950/80', 'py-3');
+                nav.querySelector('> div').classList.add('py-4');
+            }
+        });
+
+        // Simple Active Link Highlighting
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach((section) => {
+                if (pageYOffset >= section.offsetTop - 200) {
+                    current = section.getAttribute("id");
+                }
+            });
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href").includes(current)) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
