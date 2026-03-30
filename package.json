@@ -1,0 +1,27 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sw (1).js",
+  "scripts": {
+    "build": "esbuild analytics.js --bundle --minify --outfile=dist/analytics.bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanzoffc/hanzfrontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanzoffc/hanzfrontend/issues"
+  },
+  "homepage": "https://github.com/hanzoffc/hanzfrontend#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.4"
+  }
+}
